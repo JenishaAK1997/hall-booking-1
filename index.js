@@ -113,7 +113,11 @@ app.get('/customer-booking-count/:customerName', (req, res) => {
   res.json(customerBookings);
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+// const PORT = process.env.PORT || 8000;
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+const port = 4000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
